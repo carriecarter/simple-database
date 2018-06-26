@@ -90,10 +90,11 @@ You will need to read about [Mocha and async support](https://mochajs.org/#async
 
 TDD the above methods on the `Store` class. Test that the objects are handled correctly by using the API methods, but do **not** test that the files were written to the directory
 
-Tests:
+### Tests
 
-* For the setup, make sure the directory to pass to the store has been removed and then
-recreated _for each test_
+For the setup, make sure the directory to pass to the store has been removed and then recreated _for each test_
+
+Here are suggested tests (in order):
 
 1. Pass an object to the `.save` method and assert that the saved object has an _id property. Use that _id to `.get` the object and test that "got" object is semantically the same as original object.
 2. Pass a bad id to `.get` and assert that `null` is returned for the callback.
