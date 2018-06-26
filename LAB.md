@@ -1,7 +1,7 @@
 Simple Database
 ===
 
-Build a simple object database that stores and retrieves from the file system.
+Build a simple object database that stores and retrieves objects from the file system.
 
 Standard repository/dev stuff: `README.md`, `package.json`, `.gitignore`, `.eslintrc`, `.travis.yml`, tests, meaningful commits, named npm scripts, etc.
 
