@@ -1,16 +1,12 @@
 const assert = require('assert');
-const store = require('../lib/store');
+const Store = require('../lib/store');
 const path = require('path');
 const { rimraf, mkdirp } = require('../lib/fs');
 const dest = path.join(__dirname, 'mountains');
 
 describe('store', () => {
     
-    let newStore = null;
-
-    beforeEach(() => {
-        newStore = new store(dest);
-    });
+    let store = new Store(dest);
 
     beforeEach(()=> {
         return rimraf(dest);
