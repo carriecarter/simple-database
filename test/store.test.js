@@ -16,7 +16,7 @@ describe('store', () => {
         return mkdirp(dest);
     });
 
-    it('saves a file to my mountains directory and assigns an id', () => {
+    it.skip('saves a file to my mountains directory and assigns an id', () => {
         return store.save({ name: 'Klickitat' })
             .then(mountain => {
                 assert.ok(mountain._id);
